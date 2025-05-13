@@ -3,15 +3,16 @@ import styled from 'styled-components'
 import avatar from '../../img/avatar.png'
 import { signout } from '../../utils/Icons'
 import { menuItems } from '../../utils/menuItems'
-
+import { useGlobalContext } from '../../context/globalContext'
 function Navigation({active, setActive}) {
-    
+    const { logout, user } = useGlobalContext();
+
     return (
         <NavStyled>
             <div className="user-con">
                 <img src={avatar} alt="" />
                 <div className="text">
-                    <h2>Mike</h2>
+                    <h2>{user?.name}</h2>
                     <p>Your Money</p>
                 </div>
             </div>
@@ -28,9 +29,7 @@ function Navigation({active, setActive}) {
                 })}
             </ul>
             <div className="bottom-nav">
-                <li>
-                    {signout} Sign Out
-                </li>
+            <li onClick={logout}>Sign Out</li>
             </div>
         </NavStyled>
     )
@@ -92,6 +91,10 @@ const NavStyled = styled.nav`
                 transition: all .4s ease-in-out;
             }
         }
+    }
+    .bottom-nav{
+        cursor : pointer 
+    
     }
 
     .active{

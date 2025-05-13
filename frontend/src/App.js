@@ -8,7 +8,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Income from './Components/Income/Income'
 import Expenses from './Components/Expenses/Expenses';
 import { useGlobalContext } from './context/globalContext';
-
+import Login from './Login/login';
 function App() {
   const [active, setActive] = useState(1)
 
@@ -19,8 +19,8 @@ function App() {
     switch(active){
       case 1:
         return <Dashboard />
-      case 2:
-        return <Dashboard />
+      // case 2:
+      //   return <Dashboard />
       case 3:
         return <Income />
       case 4: 
@@ -33,6 +33,9 @@ function App() {
   const orbMemo = useMemo(() => {
     return <Orb />
   },[])
+  const { user } = useGlobalContext();
+if (!user) return <Login />;
+
 
   return (
     <AppStyled bg={bg} className="App">
