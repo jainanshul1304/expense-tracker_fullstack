@@ -1,62 +1,74 @@
-Expense Tracker – Major Project
-Developed by:
-Devesh Suman, Muskan, Ridhi, Vishakha
+Expense Tracker – Final Year Major Project
 Institution: Arya College, Jaipur
-Project Type: Final Year Major Project
+Project Type: Full-Stack Major Project
+Developed By:
+
+Devesh Suman
+
+Muskan
+
+Ridhi
+
+Vishakha
+
 Tech Stack: MERN (MongoDB, Express.js, React.js, Node.js)
 
 Project Overview
-The Expense Tracker is a full-stack web application developed as a major project for the final year of our undergraduate program. It is designed to help users efficiently manage their finances by allowing them to track incomes and expenses, categorize transactions, and analyze their financial habits over time.
+The Expense Tracker is a full-stack web application developed as our final year major project. It is designed to help users manage their personal finances with ease by tracking income and expenses, categorizing transactions, and analyzing spending habits over time.
 
-Features
-Add, edit, and delete income and expense transactions
+Whether it’s for budgeting monthly costs or keeping tabs on daily expenses, this app offers a simple and intuitive interface to stay financially informed and organized.
 
-View all transactions in a unified dashboard
+Key Features
+Add, edit, and delete income and expense entries
 
-Real-time calculation of balance, income, and expenses
+Unified dashboard to view all transactions
 
-Categorization of transactions (e.g., food, travel, bills)
+Real-time calculations of total balance, income, and expenses
 
-Responsive design for both desktop and mobile
+Category tagging for transactions (e.g., food, travel, bills)
 
-Secure backend API with proper CRUD operations
+Fully responsive UI for mobile and desktop
 
-Persistent data storage using MongoDB
+Secure REST API with CRUD operations
 
-Tech Stack
-Frontend:
+Data persistence with MongoDB database
 
-React.js
+Technology Stack
+Frontend
+React.js – Component-based UI library
 
-Axios
+Axios – For API requests
 
-CSS Modules or Styled Components
+CSS Modules / Styled Components – For scoped and responsive styling
 
-Backend:
+Backend
+Node.js – JavaScript runtime environment
 
-Node.js
+Express.js – Lightweight web framework
 
-Express.js
+MongoDB – NoSQL database
 
-MongoDB (via Mongoose)
+Mongoose – ODM for MongoDB
 
-RESTful API Architecture
+REST API Architecture – For robust client-server communication
 
 Getting Started
 Prerequisites
-Node.js and npm installed
+Before running the project, ensure you have the following installed:
 
-MongoDB running locally or set up using a service like MongoDB Atlas
+Node.js
 
-Steps to Run Locally
-Clone the repository:
+MongoDB (local installation or use MongoDB Atlas)
+
+Installation Steps
+Clone the repository
 
 bash
 Copy
 Edit
 git clone https://github.com/your-username/expense-tracker.git
 cd expense-tracker
-Set up and start the backend:
+Backend Setup
 
 bash
 Copy
@@ -64,41 +76,38 @@ Edit
 cd backend
 npm install
 npm run start
-Set up and start the frontend:
+Frontend Setup
 
 bash
 Copy
 Edit
-cd frontend
+cd ../frontend
 npm install
 npm start
-Open the application:
+Access the Application
 
 Frontend: http://localhost:3000
 
 Backend API: http://localhost:5000
 
 Future Enhancements
-User authentication with JWT
+JWT-based user authentication and login system
 
-Monthly spending analytics with charts
+Monthly financial analytics with visual charts
 
-Export transaction data to CSV or Excel
+Export transactions to CSV or Excel format
 
-Dark mode support
+Dark mode support for improved user experience
 
-Progressive Web App (PWA) features
+Progressive Web App (PWA) functionality for offline access
 
-Team Members and Roles
-Name	Role
-Devesh Suman	Backend Lead
+Team Members & Roles
+Name	Responsibility
+Devesh Suman	Backend Development & API Logic
 Muskan	UI/UX Design, Frontend Logic
-Ridhi	Testing, Validation
-Vishakha	Styling, Documentation
+Ridhi	Testing, Validation & QA
+Vishakha	Styling and Project Documentation
 
 License
-This project was developed solely for academic and educational purposes as part of the final year major project at Arya College, Jaipur.
-
-
-
-
+This project was developed for academic and educational use as part of the final year engineering curriculum at Arya College, Jaipur.
+It is not intended for commercial distribution or use.
